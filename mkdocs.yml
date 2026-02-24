@@ -1,0 +1,78 @@
+site_name: X For You Feed Algorithm
+site_description: Documentation for the X recommendation algorithm powering the "For You" feed
+site_url: https://OrganizationToBeNamed.github.io/x-algorithm
+repo_url: https://github.com/OrganizationToBeNamed/x-algorithm
+repo_name: OrganizationToBeNamed/x-algorithm
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Architecture: ARCHITECTURE.md
+  - Example Scenario: EXAMPLE_SCENARIO.md
+  - Diagrams:
+      - System Context (C4): diagrams/c4-context.md
+      - Pipeline Flow: diagrams/pipeline-component-flow.md
+      - Request Sequence: diagrams/sequence-diagram.md
+      - Phoenix ML: diagrams/phoenix-ml-architecture.md
+      - Thunder: diagrams/thunder-architecture.md

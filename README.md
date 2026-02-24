@@ -320,6 +320,22 @@ The `candidate-pipeline` crate provides a flexible framework for building recomm
 
 ---
 
+## Documentation
+
+Full documentation lives in the [`docs/`](docs/) folder and is auto-deployed via GitHub Pages on every push to `main`.
+
+| Document | Description |
+|----------|-------------|
+| [Architecture Guide](docs/ARCHITECTURE.md) | Three-level deep dive — beginner, mid-level, and advanced |
+| [Example Scenario](docs/EXAMPLE_SCENARIO.md) | End-to-end walkthrough with concrete data + 11 advanced deep dives |
+| [C4 System Context](docs/diagrams/c4-context.md) | High-level system boundaries (Mermaid) |
+| [Pipeline Component Flow](docs/diagrams/pipeline-component-flow.md) | The 8-stage pipeline with all components (Mermaid) |
+| [Request Sequence](docs/diagrams/sequence-diagram.md) | Full request/response flow (Mermaid) |
+| [Phoenix ML Architecture](docs/diagrams/phoenix-ml-architecture.md) | Two-tower retrieval + transformer ranking (Mermaid) |
+| [Thunder Architecture](docs/diagrams/thunder-architecture.md) | Kafka ingestion and in-memory store (Mermaid) |
+
+---
+
 ## License
 
 This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
